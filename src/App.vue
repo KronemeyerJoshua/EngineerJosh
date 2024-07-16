@@ -23,7 +23,9 @@ import HelloWorld from './components/Contact.vue'
     </q-header>
 
     <q-page-container>
-      <router-view />
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
     </q-page-container>
 
     <q-footer elevated class="bg-primary text-white text-center">
@@ -32,21 +34,13 @@ import HelloWorld from './components/Contact.vue'
   </q-layout>
 </template>
 
-<!--<template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
-</template>
--->
-<style scoped></style>
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.6s;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
