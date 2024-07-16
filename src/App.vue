@@ -1,46 +1,36 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/Contact.vue'
-
-
 </script>
 
 <template>
   <q-layout view="hHh lpR fFf">
-
     <q-header elevated class="bg-primary text-white" height-hint="98">
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
+            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
           </q-avatar>
           Engineer Josh
         </q-toolbar-title>
 
-      <q-tabs inline-label>
-        <q-route-tab name="about" icon="mail" to="/" label="About" />
-        <q-route-tab to="/resume" label="Resume" />
-        <q-route-tab to="/projects" label="Projects" />
-      </q-tabs>
-    </q-toolbar>
+        <q-tabs inline-label>
+          <q-route-tab name="about" icon="mail" to="/" label="About" />
+          <q-route-tab to="/resume" label="Resume" />
+          <q-route-tab to="/projects" label="Projects" />
+        </q-tabs>
+      </q-toolbar>
     </q-header>
-    
 
     <q-page-container>
       <router-view />
     </q-page-container>
 
-    <q-footer elevated class="bg-primary text-white">
-      <q-toolbar>
-        <q-toolbar-title>
-          <div>Full Source Code: </div>
-        </q-toolbar-title>
-      </q-toolbar>
+    <q-footer elevated class="bg-primary text-white text-center">
+      <a href="https://github.com/KronemeyerJoshua/EngineerJosh">Full Source Code</a>
     </q-footer>
-
   </q-layout>
 </template>
-
 
 <!--<template>
   <header>
@@ -59,5 +49,4 @@ import HelloWorld from './components/Contact.vue'
   <RouterView />
 </template>
 -->
-<style scoped>
-</style>
+<style scoped></style>
