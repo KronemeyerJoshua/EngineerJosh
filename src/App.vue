@@ -18,9 +18,11 @@ import HelloWorld from './components/Contact.vue'
     </q-header>
 
     <q-page-container>
-      <transition name="fade" mode="out-in">
-        <router-view />
-      </transition>
+      <router-view v-slot="{ Component }">
+        <transition>
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </q-page-container>
 
     <q-footer elevated class="bg-primary text-white text-center">
