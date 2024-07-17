@@ -1,8 +1,8 @@
 <script setup lang="ts">
 defineProps<{
-  avatar: string,
-  about: string,
-  linkedin: string,
+  avatar: string
+  about: string
+  linkedin: string
   github: string
 }>()
 </script>
@@ -17,10 +17,15 @@ defineProps<{
 
     <div class="col-8 column q-pl-xl">
       <div class="col-8">
-        About Me
+        <p class="text-h4">About Me</p>
+        <p>{{ about }}</p>
       </div>
       <div class="col">
-        Socials
+        <p class="text-h4">Socials</p>
+        <a :href="linkedin" class="q-pr-md"
+          ><q-icon size="2rem" name="fa-brands fa-linkedin"></q-icon
+        ></a>
+        <a :href="github"><q-icon size="2rem" name="fa-brands fa-github"></q-icon></a>
       </div>
     </div>
   </div>
@@ -35,9 +40,11 @@ defineProps<{
   width: 100%;
   padding-left: 6rem;
   padding-right: 6rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 </style>

@@ -7,17 +7,12 @@ import HelloWorld from './components/Contact.vue'
   <q-layout view="hHh lpR fFf">
     <q-header elevated class="bg-primary text-white" height-hint="98">
       <q-toolbar>
-        <q-toolbar-title>
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
-          </q-avatar>
-          Engineer Josh
-        </q-toolbar-title>
+        <q-toolbar-title>Engineer Josh </q-toolbar-title>
 
         <q-tabs inline-label>
-          <q-route-tab name="about" icon="mail" to="/" label="About" />
-          <q-route-tab to="/resume" label="Resume" />
-          <q-route-tab to="/projects" label="Projects" />
+          <q-route-tab name="about" icon="fa-solid fa-address-card" to="/" label="About" />
+          <q-route-tab to="/resume" icon="fa-solid fa-file" label="Resume" />
+          <q-route-tab to="/projects" icon="fa-solid fa-code" label="Projects" />
         </q-tabs>
       </q-toolbar>
     </q-header>
