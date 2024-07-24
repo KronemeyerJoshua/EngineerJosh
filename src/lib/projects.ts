@@ -95,5 +95,6 @@ export const allprojects: Array<Project> = [
   sanctus,
   stopit,
   bazgrimstoolbar,
-  atpclassic
+  atpclassic,
+  strongapp
 ]

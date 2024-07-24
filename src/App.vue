@@ -17,13 +17,13 @@ import HelloWorld from './components/Contact.vue'
       </q-toolbar>
     </q-header>
 
-    <q-page-container>
-      <router-view v-slot="{ Component }">
-        <transition>
+    <transition>
+      <q-page-container>
+        <router-view v-slot="{ Component }">
           <component :is="Component" />
-        </transition>
-      </router-view>
-    </q-page-container>
+        </router-view>
+      </q-page-container>
+    </transition>
 
     <q-footer elevated class="bg-primary text-white text-center">
       <a href="https://github.com/KronemeyerJoshua/EngineerJosh">Full Source Code</a>
