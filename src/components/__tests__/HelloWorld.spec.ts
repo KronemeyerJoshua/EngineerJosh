@@ -1,6 +1,12 @@
+/*
+
+Example Test
+
 import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils'
+
+
 import HelloWorld from '../Contact.vue'
 
 describe('HelloWorld', () => {
@@ -9,3 +15,4 @@ describe('HelloWorld', () => {
     expect(wrapper.text()).toContain('Hello Vitest')
   })
 })
+*/

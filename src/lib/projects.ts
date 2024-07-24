@@ -31,7 +31,7 @@ export const wab: Project = {
 }
 
 export const wells: Project = {
-  name: 'IAM Portal',
+  name: 'Identity Access and Managment',
   description:
     'Identity and Access Management (IAM) system that tracks, grants, and removes elevated privileges across the organization',
   company: 'Wells Fargo',
@@ -40,37 +40,49 @@ export const wells: Project = {
 
 export const ibiley: Project = {
   name: 'Admin Dashboard',
-  description: '',
+  description:
+    'Administration dashboard that features various metrics, package tracking for School Uniforms, and QR Code generation',
   company: 'Ibiley',
   techstack: 'React, .Net Core, SQL Server'
 }
 
 export const sanctus: Project = {
   name: 'Sanctus Inn',
-  description: '',
+  description:
+    'A custom built community website POC for Ashes of Creation. Features include completely custom forums, identity management, WYSIWYG, Twitch and Discord integration',
   company: 'Personal Projects',
   techstack: 'Laravel, Vue'
 }
 
 export const stopit: Project = {
   name: 'StopIt!',
-  description: '',
+  description:
+    'A simple addon that stops the camera from spinning when you open menus in Elder Scrolls Online',
   company: 'Personal Projects',
-  techstack: ''
+  techstack: 'Lua'
 }
 
 export const bazgrimstoolbar: Project = {
   name: 'Bazgrims Toolbar and Subtitles',
-  description: '',
+  description:
+    'An addon that keeps tracks of various metrics at the bottom of your screen and allows the use of subtitles in Elder Scrolls Online. Now integerated into Wykkyds Framework',
   company: 'Personal Projects',
-  techstack: ''
+  techstack: 'Lua'
 }
 
 export const atpclassic: Project = {
   name: 'ATP Classic Scoreboard',
-  description: '',
+  description:
+    'Strongman Scoreboard with an auto-refresh, retrieval from Google Docs, and in-memory cache',
   company: 'Advanced Training and Powerlifting',
-  techstack: ''
+  techstack: 'Vue, FastAPI, Google Docs API'
+}
+
+export const strongapp: Project = {
+  name: 'Strongapp',
+  description: 'Barbell plate calculation app that features a simple to use user interface',
+  company: 'Personal Projects',
+  techstack: 'Ionic, Vue, Android'
 }
 
 export const allprojects: Array<Project> = [

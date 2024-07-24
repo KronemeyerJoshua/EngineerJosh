@@ -4,6 +4,7 @@ defineProps<{
   about: string
   linkedin: string
   github: string
+  email: string
 }>()
 </script>
 
@@ -25,7 +26,10 @@ defineProps<{
         <a :href="linkedin" class="q-pr-md"
           ><q-icon size="2rem" name="fa-brands fa-linkedin"></q-icon
         ></a>
-        <a :href="github"><q-icon size="2rem" name="fa-brands fa-github"></q-icon></a>
+        <a :href="github" class="q-pr-md"
+          ><q-icon size="2rem" name="fa-brands fa-github"></q-icon
+        ></a>
+        <a :href="'mailto:' + email"><q-icon size="2rem" name="fa-regular fa-envelope"></q-icon></a>
       </div>
     </div>
   </div>

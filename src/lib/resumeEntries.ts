@@ -46,7 +46,7 @@ export const wellsfargo: ResumeEntry = {
 }
 
 export const ibiley: ResumeEntry = {
-  title: 'ASU Captstone Software Engineer',
+  title: 'ASU Capstone Software Engineer',
   company: 'Ibiley',
   description: `
   <ul>

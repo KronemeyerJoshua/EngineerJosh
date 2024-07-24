@@ -10,6 +10,7 @@ import slalomLogo from '@/assets/img/slalom-logo.png'
 import wabLogo from '@/assets/img/wab-logo.png'
 import azdhsLogo from '@/assets/img/adhs-logo.png'
 import { allprojects } from '@/lib/projects'
+import { joshContact } from '@/lib/about'
 
 const companies: Array<Image> = [
   { imgUrl: msLogo, extUrl: 'https://microsoft.com/' },
@@ -24,10 +25,11 @@ const companies: Array<Image> = [
   <div class="about">
     <Contact
       class="q-mb-sm"
-      avatar="@/assets/img/avatar_main.jpg"
-      about="Test Message"
-      linkedin="https://www.linkedin.com/in/kronemeyerj/"
-      github="https://github.com/KronemeyerJoshua"
+      :avatar="joshContact.avatar"
+      :about="joshContact.about"
+      :linkedin="joshContact.linkedin"
+      :github="joshContact.github"
+      :email="joshContact.email"
     />
     <HorizontalList class="q-mb-sm" :items="companies" />
     <CardBox :projects="allprojects" />
