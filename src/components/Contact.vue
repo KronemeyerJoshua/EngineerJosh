@@ -10,18 +10,18 @@ defineProps<{
 
 <template>
   <div class="row contact">
-    <div class="col">
+    <div class="col-4">
       <q-avatar size="20rem">
         <img src="@/assets/img/avatar_main.jpg" />
       </q-avatar>
     </div>
 
-    <div class="col-8 column q-pl-xl">
-      <div class="col-8">
+    <div class="col-8 q-pl-xl">
+      <div class="col-12">
         <p class="text-h4">About Me</p>
         <p>{{ about }}</p>
       </div>
-      <div class="col">
+      <div class="col-4">
         <p class="text-h4">Socials</p>
         <a :href="linkedin" class="q-pr-md"
           ><q-icon size="2rem" name="fa-brands fa-linkedin"></q-icon
