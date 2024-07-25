@@ -19,7 +19,9 @@ onBeforeMount(() => {
 </script>
 
 <template>
-  <div>{{ projectSelected?.name }}</div>
-  <div>{{ projectSelected?.company }}</div>
-  <div>{{ projectSelected?.description }}</div>
+  <div class="container">
+    <div>{{ projectSelected?.name }}</div>
+    <div>{{ projectSelected?.company }}</div>
+    <div>{{ projectSelected?.description }}</div>
+  </div>
 </template>

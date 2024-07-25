@@ -39,19 +39,4 @@ function formatDate(date: Date | undefined): string {
 .list ul li {
   color: white;
 }
-
-.timeline-box {
-  color: white;
-  background-color: $primary;
-  border: 1px solid $accent;
-  width: 100%;
-  padding-left: 6rem;
-  padding-right: 6rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-radius: 5px;
-  box-shadow:
-    0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 </style>

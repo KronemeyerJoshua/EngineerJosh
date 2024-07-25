@@ -4,7 +4,7 @@ import ResumeTimeline from '@/components/ResumeTimeline.vue'
 </script>
 
 <template>
-  <div class="">
+  <div class="container">
     <ResumeTimeline :resumeEntries="allResumeEntries" />
   </div>
 </template>

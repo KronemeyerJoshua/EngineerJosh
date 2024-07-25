@@ -9,7 +9,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="row contact">
+  <div class="row container">
     <div class="col-4">
       <q-avatar size="20rem">
         <img src="@/assets/img/avatar_main.jpg" />
@@ -34,21 +34,3 @@ defineProps<{
     </div>
   </div>
 </template>
-
-<style scoped lang="scss">
-@import '../quasar-variables.sass';
-
-.contact {
-  background-color: $primary;
-  border: 1px solid $accent;
-  width: 100%;
-  padding-left: 6rem;
-  padding-right: 6rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-radius: 5px;
-  box-shadow:
-    0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-</style>
