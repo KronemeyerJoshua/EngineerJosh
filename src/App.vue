@@ -1,7 +1,4 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/Contact.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <q-layout view="hHh lpR fFf">
