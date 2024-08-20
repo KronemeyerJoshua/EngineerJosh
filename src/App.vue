@@ -1,10 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterLink } from 'vue-router'
+</script>
 
 <template>
   <q-layout view="hHh lpR fFf">
     <q-header elevated class="bg-primary text-white" height-hint="98">
       <q-toolbar>
-        <q-toolbar-title>Engineer Josh </q-toolbar-title>
+        <q-toolbar-title class="nav-title"
+          ><RouterLink to="/">Engineer Josh</RouterLink></q-toolbar-title
+        >
 
         <q-tabs inline-label>
           <q-route-tab name="about" icon="fa-solid fa-address-card" to="/" label="About" />
@@ -29,6 +33,10 @@
 </template>
 
 <style scoped>
+.nav-title a {
+  color: white;
+  text-decoration: none;
+}
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.6s;

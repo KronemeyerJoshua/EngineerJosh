@@ -12,6 +12,7 @@ export const microsoftFullstack: ResumeEntry = {
     <li>Facilitated the onboarding of five contractors through curated documentation and continuous mentorship which expedited tangible contributions.</li>
   </ul>`,
   startDate: new Date(2024, 1),
+  endDate: new Date(2024, 7),
   location: 'Remote'
 }
 

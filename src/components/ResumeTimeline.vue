@@ -16,7 +16,7 @@ function formatDate(date: Date | undefined): string {
 <template>
   <div class="q-px-lg q-py-md timeline-box">
     <q-timeline color="secondary">
-      <q-timeline-entry heading>Joshua Kronemeyer</q-timeline-entry>
+      <q-timeline-entry heading>Work Experience</q-timeline-entry>
 
       <q-timeline-entry v-for="item in resumeEntries" :key="item.company">
         <template v-slot:title>

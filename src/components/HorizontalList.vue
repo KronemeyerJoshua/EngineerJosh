@@ -2,6 +2,7 @@
 export interface Image {
   imgUrl: string
   extUrl: string
+  icon?: boolean
 }
 
 defineProps<{
@@ -11,10 +12,11 @@ defineProps<{
 
 <template>
   <div class="row hz-list">
-    <div class="col img-container items-center content-center" v-for="item in items">
+    <div class="col img-container items-center content-center" :key="i" v-for="(item, i) in items">
       <a :href="item.extUrl">
         <div class="flex flex-center">
-          <img class="logo self-center" :src="item.imgUrl" />
+          <img v-if="!item.icon" class="logo self-center" :src="item.imgUrl" />
+          <q-icon v-if="item.icon" size="2rem" :name="item.imgUrl"></q-icon>
         </div>
       </a>
     </div>
