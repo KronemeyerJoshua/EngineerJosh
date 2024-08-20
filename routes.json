@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "route": "/resume",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/projects",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/projects/*",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/**",
+      "rewrite": "/index.html"
+    }
+  ]
+}
